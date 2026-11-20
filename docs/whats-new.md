@@ -23,6 +23,10 @@ Update the server and the agent together; the console offers the agent download 
 - View opens the local copy of a study even when it is filed under another patient name here, and the Status column says under which name and ID it is filed when that differs from the remote system.
 - Studies: the series toggle sits in the Actions column, patients are separated by a clear gap, and the selection and delete buttons have their own line.
 
+## TekVault PACS 1.6.3
+
+1.6.3 follows 1.6.2 closely. Update the server and the agent together; the console offers the agent download to every user whose agent is older.
+
 ### Query Remote
 
 - The archive is compared image by image with what the remote system reports. A study that is here but short of images shows **Missing x of y** and gets a **Get missing** button that fetches only the missing images. Tick **only studies with missing images** to list them together with the studies not here at all, and use **Select all with missing images** to retrieve them in one go.

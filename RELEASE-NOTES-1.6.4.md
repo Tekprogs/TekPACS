@@ -3,14 +3,10 @@
 Server and agent are released together; update both. The console offers the agent download to every user whose agent is older.
 
 ### Changes
-- Patients who share a Patient ID are kept apart and listed under Jobs, Mitigation for a decision; Settings, Data matching sets what must agree (ID, name, birth date and source system by default); Maintenance, Data validation checks the archive against the images.
-- Disc writing asks for a blank disc of the right kind and ejects a used one; drives show whether they write dual layer.
-- Jobs: tick rows and use Cancel selected; the bulk buttons cannot be pressed twice while they work.
-- Query Remote: finds studies that are in the archive with images missing and fetches only the missing images; the status column shows what the archive actually holds, before and after a retrieve. A retrieve only counts as successful when the study is really in the archive afterwards.
-- Disc writing: live progress from the drive (MB written, time left, buffer), clear step names, readable error messages, no sleep during a write; a failed disc is started again with a new blank.
-- Agent: "Keep this PC awake always" option in the tray menu.
-- Security: the DICOM allow-list starts as every address and is restored if emptied, so the server cannot be locked out.
-- Sign in with Microsoft: the wizard completes the role assignment on every tenant.
+- Patients who share a Patient ID are kept apart and listed under Jobs, Mitigation for a decision (same person, different people, or a new ID for one of them). Settings, Data matching sets what must agree: ID, name, birth date and source system by default. Settings, Maintenance, Data validation checks the archive against the images.
+- Disc writing asks for a blank disc of the right kind and ejects a used one; the Export page shows whether each drive writes dual layer.
+- Query Remote: View opens the local copy even when it is filed under another patient name here, and says which one.
+- Studies: series toggle in the Actions column, a clear gap between patients, selection and delete buttons on their own line.
 - Full notes: https://tekprogs.com/docs/whats-new.html
 
 ### Files
