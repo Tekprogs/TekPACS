@@ -2,7 +2,7 @@
 
 A self-hosted DICOM server and archive for Windows. Receives from any modality, stores securely, backs itself up, and lets staff search, view, export and send studies from a browser. One installer, one Windows service, one browser console. Nothing to license per modality or per seat.
 
-**[Download the latest release](../../releases/latest)** · [Documentation](docs/index.md) · [Website](https://tekprogs.com) · [Support](https://tekprogs.com/support.html)
+**[Download the latest release](../../releases/latest)** (also available from [tekprogs.com/downloads](https://tekprogs.com/downloads.html)) · [Documentation](docs/index.md) · [Website](https://tekprogs.com) · [Support](https://tekprogs.com/support.html)
 
 > This repository holds the installers and the documentation. The source code is not published here.
 
