@@ -16,7 +16,8 @@ Server and agent are released together; update both. The console offers the agen
 ### Files
 | File | SHA-256 |
 |---|---|
-| TekVaultPACS-Setup-1.6.2.exe | (fill in after the final build) |
-| DicomAgent-Setup-1.6.2.exe | (fill in after the final build) |
+| TekVaultPACS-Setup-1.6.2.exe | `8a17e7512f25e436a60cbcfff3524c41307cc80e55349ede96288047cc1628e8` |
+| DicomAgent-Setup-1.6.2.exe | `29dc3b0f8f3f9ed9597f54dcaf8a52b59e6eb2987389dffc6a781933bd296dbe` |
+| DicomTestKit.zip | optional test tool, unchanged |
 
 Runs on Windows Server 2016 or newer, or Windows 10 / 11 (64-bit). Windows SmartScreen may warn about a newly downloaded installer; choose *More info*, then *Run anyway*.
