@@ -2,6 +2,37 @@
 
 Server and agent are released together; both must be updated for the agent-related features.
 
+## TekVault PACS 1.6.3
+
+1.6.3 follows 1.6.2 closely. Update the server and the agent together; the console offers the agent download to every user whose agent is older.
+
+### Query Remote
+
+- The archive is compared image by image with what the remote system reports. A study that is here but short of images shows **Missing x of y** and gets a **Get missing** button that fetches only the missing images. Tick **only studies with missing images** to list them together with the studies not here at all, and use **Select all with missing images** to retrieve them in one go.
+- The Status column shows what the archive holds, re-read from the index when a retrieve finishes, rather than the retrieve's own report. A retrieve only counts as successful when the study is really in the archive afterwards; a remote system that accepts the request and sends nothing is reported as a failure with the likely cause.
+
+### Jobs
+
+- Every jobs table has a checkbox column. The header box selects all rows shown in the current tab; **Cancel selected** stops the selected running or queued jobs and removes the selected finished ones. Cancel all and Clear failed remain for the one-click cases.
+- While one of those actions runs, the buttons are disabled and read "Working" so it cannot be started twice; a short notice says what was done.
+
+### Writing discs with the agent
+
+- Progress comes from the drive itself: MB written of the total, percentage, time left, write speed and buffer fill, with each step named (checking the disc, calibrating, writing, closing the disc, verifying, finishing). Closing a dual-layer disc is announced because it takes minutes on its own.
+- Buffer-underrun protection is switched on and the agent runs at higher priority while writing. A disc being written keeps the PC awake.
+- Errors are explained in plain words (I/O error on the disc, buffer ran empty, drive not ready, and so on) with what to do. A failed disc is not retried: insert a new blank and start the export again.
+- The progress window is narrower and wraps its text.
+
+### Agent
+
+- **Keep this PC awake always** in the tray menu holds off sleep the whole time the agent runs, for a PC that must stay reachable for exports and backups. The display can still turn off.
+
+### Security and setup
+
+- The DICOM allow-list starts with 0.0.0.0/0 and ::/0 (every address). Replace them with your networks to restrict access; if every entry is removed the allow-all entries are put back, so the server cannot be locked out by accident.
+- The Sign in with Microsoft wizard completes the Admin role assignment on every tenant (one Microsoft Graph lookup was refused on some tenants and stopped the wizard at its last step).
+- The sidebar menu text is slightly larger. The support card shows the company contact only.
+
 ## TekVault PACS 1.6.2
 
 1.6.2 is a maintenance release on top of 1.6.1. Update the server and the agent together; the console offers the agent download to every user whose agent is older.
