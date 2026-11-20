@@ -2,9 +2,26 @@
 
 Server and agent are released together; both must be updated for the agent-related features.
 
-## TekVault PACS 1.6.3
+## TekVault PACS 1.6.4
 
-1.6.3 follows 1.6.2 closely. Update the server and the agent together; the console offers the agent download to every user whose agent is older.
+Update the server and the agent together; the console offers the agent download to every user whose agent is older. The database upgrades itself on the first start.
+
+### Patients who share a Patient ID
+
+- A Patient ID is only unique on the system that issued it. A study that arrives under an ID already used here by a different person is now filed as a **separate patient** with the same ID instead of being merged into the first one. Under Settings, go to **Data matching** to choose what must agree for two studies to belong to the same patient: by default the ID, the name, the birth date and the source system (the AE title the images came from).
+- Every such clash is listed under Jobs, **Mitigation**, where an administrator decides: the same person (merge), different people (keep apart), or give one of them a new Patient ID (the images are rewritten with the change record).
+- Under Settings, go to Maintenance, and look for **Data validation**: it reads the first image of every study and compares it with the index, lists studies filed under the wrong person for Mitigation, corrects study details that drifted, and counts missing files. Archives from earlier versions should run it once.
+- Delete patient and Edit patient details act on one person only, never on somebody else who shares the ID.
+
+### Disc writing
+
+- Before writing, the agent checks the disc. A used, failed or wrong disc is ejected and a window asks for a blank of the right kind for the data ("a blank DVD-R or DVD+R (4.7 GB)"); Start becomes available when one is detected, Cancel ends the export without writing.
+- The Export page shows for each drive whether it writes dual-layer or Blu-ray discs, and only suggests disc types that drive can write.
+
+### Query Remote and Studies
+
+- View opens the local copy of a study even when it is filed under another patient name here, and the Status column says under which name and ID it is filed when that differs from the remote system.
+- Studies: the series toggle sits in the Actions column, patients are separated by a clear gap, and the selection and delete buttons have their own line.
 
 ### Query Remote
 
