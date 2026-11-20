@@ -1,0 +1,6 @@
+# installers and archives go on the Releases page, never into the repository
+*.exe
+*.zip
+*.msi
+Thumbs.db
+.DS_Store
