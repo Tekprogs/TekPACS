@@ -1,10 +1,10 @@
-# What's new in 1.6
+# What's new
 
 Server and agent are released together; both must be updated for the agent-related features.
 
-## TekVault PACS 1.6.4
+## TekVault PACS 1.7.0
 
-Update the server and the agent together; the console offers the agent download to every user whose agent is older. The database upgrades itself on the first start.
+Update the server and the agent together; the console offers the agent download to every user whose agent is older. The database is unchanged from 1.6.4.
 
 ### Viewer
 
@@ -13,7 +13,11 @@ Update the server and the agent together; the console offers the agent download 
 - Window presets (soft tissue, lung, bone, brain, liver, abdomen, mediastinum, stroke), typed window values, Auto, and **W/L from ROI**.
 - Length, angle and Cobb angle with calibration; rectangle, ellipse and freehand ROI with mean, deviation, minimum, maximum and area; pixel probe; text and arrow labels; drawings can be selected, moved and deleted, and exported as CSV.
 - **MPR**: axial, coronal and sagittal planes with a crosshair, slab MIP / MinIP / average, and a rotating 3D projection with a threshold. **Fuse** overlays another series in colour (PET on CT), **Highlight** colours a value range.
-- Tag inspector with filter, export of the view as PNG or JPEG, print, and download of the original DICOM file. Cine uses the frame rate stored in the file.
+- Tag inspector with filter, export of the view as PNG or JPEG, print, and download of the original DICOM file. Cine uses the frame rate stored in the file. Every toolbar button has an icon; on narrow screens the toolbar shows icons only.
+
+## TekVault PACS 1.6.4
+
+Update the server and the agent together; the console offers the agent download to every user whose agent is older. The database upgrades itself on the first start.
 
 ### Patients who share a Patient ID
 
