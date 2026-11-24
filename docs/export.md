@@ -105,11 +105,9 @@ In the console: `/settings/export`
 
 <!-- -->
 
-1.  The viewer lists patients, studies and series on the left with thumbnails.
-2.  The main area shows the image.
-3.  Mouse wheel or arrow keys step through a series, drag pans, wheel zooms, right-drag or the sliders adjust brightness and contrast.
-4.  Buttons rotate, flip, invert, fit, show 1:1, play a cine loop and print. "DICOM file" opens the original file for a radiology viewer.
-5.  The images in the viewer are rendered at the window the modality sent.
-6.  The untouched DICOM files and DICOMDIR are on the disc for full fidelity.
+1.  It is the same viewer as the console: patients, studies and series are listed on the left, and the toolbar has the same window presets, layouts, measurements, ROI statistics, MPR, tag inspector, export and print.
+2.  The images are carried as their stored pixel values, so window/level and Hounsfield values are real, not a picture.
+3.  "DICOM file" in the Export menu opens the original file for a radiology viewer.
+4.  The untouched DICOM files and DICOMDIR are on the disc for full fidelity.
 
 [Viewing images in the browser](viewer.md) · [All guides](index.md) · [Sending studies to another node](send.md)

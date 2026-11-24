@@ -3,6 +3,7 @@
 Server and agent are released together; update both. The console offers the agent download to every user whose agent is older.
 
 ### Changes
+- Viewer: the console and the disc viewer are now the same viewer, with layouts and linked scrolling, cross-reference lines, window presets and W/L from ROI, length / angle / Cobb with calibration, ROI statistics in Hounsfield units, text and arrow labels, MPR with slab and a 3D projection, fusion, highlight, a tag inspector, PNG / JPEG / CSV export and print. Discs carry the stored pixel values, so window/level works on the disc too.
 - Patients who share a Patient ID are kept apart and listed under Jobs, Mitigation for a decision (same person, different people, or a new ID for one of them). Settings, Data matching sets what must agree: ID, name, birth date and source system by default. Settings, Maintenance, Data validation checks the archive against the images.
 - Disc writing asks for a blank disc of the right kind and ejects a used one; the Export page shows whether each drive writes dual layer.
 - Query Remote: View opens the local copy even when it is filed under another patient name here, and says which one.

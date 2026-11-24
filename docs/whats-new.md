@@ -6,6 +6,15 @@ Server and agent are released together; both must be updated for the agent-relat
 
 Update the server and the agent together; the console offers the agent download to every user whose agent is older. The database upgrades itself on the first start.
 
+### Viewer
+
+- The console viewer and the viewer written to every disc and USB export are now **one and the same**: the disc carries the stored pixel values instead of pictures, so window/level, presets and Hounsfield values are real on the disc too.
+- Layouts from 1 × 1 to 2 × 3 with linked scrolling by slice position, linked window and zoom, cross-reference lines between viewports and R L A P H F orientation markers.
+- Window presets (soft tissue, lung, bone, brain, liver, abdomen, mediastinum, stroke), typed window values, Auto, and **W/L from ROI**.
+- Length, angle and Cobb angle with calibration; rectangle, ellipse and freehand ROI with mean, deviation, minimum, maximum and area; pixel probe; text and arrow labels; drawings can be selected, moved and deleted, and exported as CSV.
+- **MPR**: axial, coronal and sagittal planes with a crosshair, slab MIP / MinIP / average, and a rotating 3D projection with a threshold. **Fuse** overlays another series in colour (PET on CT), **Highlight** colours a value range.
+- Tag inspector with filter, export of the view as PNG or JPEG, print, and download of the original DICOM file. Cine uses the frame rate stored in the file.
+
 ### Patients who share a Patient ID
 
 - A Patient ID is only unique on the system that issued it. A study that arrives under an ID already used here by a different person is now filed as a **separate patient** with the same ID instead of being merged into the first one. Under Settings, go to **Data matching** to choose what must agree for two studies to belong to the same patient: by default the ID, the name, the birth date and the source system (the AE title the images came from).

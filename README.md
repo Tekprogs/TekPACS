@@ -42,12 +42,12 @@ Full walkthrough: [Getting started](docs/getting-started.md).
 
 **Finding and viewing**
 - Search by patient, ID, accession, modality, date and every other study field. Sort by any column.
-- Built-in browser viewer: window and level, zoom, pan, scroll, cine, measure, presets.
+- Built-in browser viewer: window presets, layouts with linked scrolling, length / angle / Cobb, ROI statistics in HU, MPR with 3D, fusion, tag inspector, export.
 - Edit patient details with a full change record in the images.
 
 **Export and send**
 - Send to any node with retries, send windows and bandwidth limits.
-- Export as ZIP, to a folder, to a USB drive, or burn a CD or DVD. Every disc and USB carries a viewer that opens in any browser.
+- Export as ZIP, to a folder, to a USB drive, or burn a CD or DVD. Every disc and USB carries the same viewer; it opens in any browser.
 
 **Storage, backup and operations**
 - Several storage locations, folder layouts, quotas and minimum free space.
